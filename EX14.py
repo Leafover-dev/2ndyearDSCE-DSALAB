@@ -4,6 +4,7 @@ class HashTable:
         self.table = [None] * size
     def hash_function(self, key):
         return key % self.size
+
     def insert(self, key):
         index = self.hash_function(key)
         for i in range(self.size):
